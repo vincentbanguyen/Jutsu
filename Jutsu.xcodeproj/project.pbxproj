@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1C176B527126F7000608C6D /* JutsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176B427126F7000608C6D /* JutsuApp.swift */; };
+		E1C176B727126F7000608C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176B627126F7000608C6D /* ContentView.swift */; };
+		E1C176B927126F7300608C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C176B827126F7300608C6D /* Assets.xcassets */; };
+		E1C176BC27126F7300608C6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C176BB27126F7300608C6D /* Preview Assets.xcassets */; };
+		E1C176C027126F7300608C6D /* Jutsu WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E1C176BF27126F7300608C6D /* Jutsu WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1C176C527126F7400608C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C176C427126F7400608C6D /* Assets.xcassets */; };
+		E1C176CB27126F7400608C6D /* Jutsu WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1C176CA27126F7400608C6D /* Jutsu WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1C176D027126F7400608C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176CF27126F7400608C6D /* ContentView.swift */; };
+		E1C176D227126F7400608C6D /* JutsuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176D127126F7400608C6D /* JutsuApp.swift */; };
+		E1C176D427126F7400608C6D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176D327126F7400608C6D /* ComplicationController.swift */; };
+		E1C176D627126F7500608C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C176D527126F7500608C6D /* Assets.xcassets */; };
+		E1C176D927126F7500608C6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C176D827126F7500608C6D /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1C176C127126F7300608C6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1C176A927126F7000608C6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1C176BE27126F7300608C6D;
+			remoteInfo = "Jutsu WatchKit App";
+		};
+		E1C176CC27126F7400608C6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1C176A927126F7000608C6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1C176C927126F7400608C6D;
+			remoteInfo = "Jutsu WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1C176E027126F7500608C6D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1C176CB27126F7400608C6D /* Jutsu WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C176E427126F7500608C6D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E1C176C027126F7300608C6D /* Jutsu WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E1C176B127126F7000608C6D /* Jutsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jutsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C176B427126F7000608C6D /* JutsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JutsuApp.swift; sourceTree = "<group>"; };
+		E1C176B627126F7000608C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1C176B827126F7300608C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1C176BB27126F7300608C6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1C176BF27126F7300608C6D /* Jutsu WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jutsu WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C176C427126F7400608C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1C176CA27126F7400608C6D /* Jutsu WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Jutsu WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C176CF27126F7400608C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1C176D127126F7400608C6D /* JutsuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JutsuApp.swift; sourceTree = "<group>"; };
+		E1C176D327126F7400608C6D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E1C176D527126F7500608C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1C176D827126F7500608C6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1C176DA27126F7500608C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1C176AE27126F7000608C6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C176C727126F7400608C6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1C176A827126F7000608C6D = {
+			isa = PBXGroup;
+			children = (
+				E1C176B327126F7000608C6D /* Jutsu */,
+				E1C176C327126F7300608C6D /* Jutsu WatchKit App */,
+				E1C176CE27126F7400608C6D /* Jutsu WatchKit Extension */,
+				E1C176B227126F7000608C6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1C176B227126F7000608C6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1C176B127126F7000608C6D /* Jutsu.app */,
+				E1C176BF27126F7300608C6D /* Jutsu WatchKit App.app */,
+				E1C176CA27126F7400608C6D /* Jutsu WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1C176B327126F7000608C6D /* Jutsu */ = {
+			isa = PBXGroup;
+			children = (
+				E1C176B427126F7000608C6D /* JutsuApp.swift */,
+				E1C176B627126F7000608C6D /* ContentView.swift */,
+				E1C176B827126F7300608C6D /* Assets.xcassets */,
+				E1C176BA27126F7300608C6D /* Preview Content */,
+			);
+			path = Jutsu;
+			sourceTree = "<group>";
+		};
+		E1C176BA27126F7300608C6D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E1C176BB27126F7300608C6D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1C176C327126F7300608C6D /* Jutsu WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E1C176C427126F7400608C6D /* Assets.xcassets */,
+			);
+			path = "Jutsu WatchKit App";
+			sourceTree = "<group>";
+		};
+		E1C176CE27126F7400608C6D /* Jutsu WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E1C176CF27126F7400608C6D /* ContentView.swift */,
+				E1C176D127126F7400608C6D /* JutsuApp.swift */,
+				E1C176D327126F7400608C6D /* ComplicationController.swift */,
+				E1C176D527126F7500608C6D /* Assets.xcassets */,
+				E1C176DA27126F7500608C6D /* Info.plist */,
+				E1C176D727126F7500608C6D /* Preview Content */,
+			);
+			path = "Jutsu WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E1C176D727126F7500608C6D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E1C176D827126F7500608C6D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1C176B027126F7000608C6D /* Jutsu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C176E527126F7500608C6D /* Build configuration list for PBXNativeTarget "Jutsu" */;
+			buildPhases = (
+				E1C176AD27126F7000608C6D /* Sources */,
+				E1C176AE27126F7000608C6D /* Frameworks */,
+				E1C176AF27126F7000608C6D /* Resources */,
+				E1C176E427126F7500608C6D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1C176C227126F7300608C6D /* PBXTargetDependency */,
+			);
+			name = Jutsu;
+			productName = Jutsu;
+			productReference = E1C176B127126F7000608C6D /* Jutsu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1C176BE27126F7300608C6D /* Jutsu WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C176E127126F7500608C6D /* Build configuration list for PBXNativeTarget "Jutsu WatchKit App" */;
+			buildPhases = (
+				E1C176BD27126F7300608C6D /* Resources */,
+				E1C176E027126F7500608C6D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1C176CD27126F7400608C6D /* PBXTargetDependency */,
+			);
+			name = "Jutsu WatchKit App";
+			productName = "Jutsu WatchKit App";
+			productReference = E1C176BF27126F7300608C6D /* Jutsu WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E1C176C927126F7400608C6D /* Jutsu WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C176DD27126F7500608C6D /* Build configuration list for PBXNativeTarget "Jutsu WatchKit Extension" */;
+			buildPhases = (
+				E1C176C627126F7400608C6D /* Sources */,
+				E1C176C727126F7400608C6D /* Frameworks */,
+				E1C176C827126F7400608C6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jutsu WatchKit Extension";
+			productName = "Jutsu WatchKit Extension";
+			productReference = E1C176CA27126F7400608C6D /* Jutsu WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1C176A927126F7000608C6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					E1C176B027126F7000608C6D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					E1C176BE27126F7300608C6D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					E1C176C927126F7400608C6D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = E1C176AC27126F7000608C6D /* Build configuration list for PBXProject "Jutsu" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1C176A827126F7000608C6D;
+			productRefGroup = E1C176B227126F7000608C6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1C176B027126F7000608C6D /* Jutsu */,
+				E1C176BE27126F7300608C6D /* Jutsu WatchKit App */,
+				E1C176C927126F7400608C6D /* Jutsu WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1C176AF27126F7000608C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C176BC27126F7300608C6D /* Preview Assets.xcassets in Resources */,
+				E1C176B927126F7300608C6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C176BD27126F7300608C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C176C527126F7400608C6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C176C827126F7400608C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C176D927126F7500608C6D /* Preview Assets.xcassets in Resources */,
+				E1C176D627126F7500608C6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1C176AD27126F7000608C6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C176B727126F7000608C6D /* ContentView.swift in Sources */,
+				E1C176B527126F7000608C6D /* JutsuApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C176C627126F7400608C6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C176D027126F7400608C6D /* ContentView.swift in Sources */,
+				E1C176D227126F7400608C6D /* JutsuApp.swift in Sources */,
+				E1C176D427126F7400608C6D /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1C176C227126F7300608C6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1C176BE27126F7300608C6D /* Jutsu WatchKit App */;
+			targetProxy = E1C176C127126F7300608C6D /* PBXContainerItemProxy */;
+		};
+		E1C176CD27126F7400608C6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1C176C927126F7400608C6D /* Jutsu WatchKit Extension */;
+			targetProxy = E1C176CC27126F7400608C6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E1C176DB27126F7500608C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1C176DC27126F7500608C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E1C176DE27126F7500608C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jutsu WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JAFM26WWR8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jutsu WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jutsu WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinWin.apps.Jutsu.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		E1C176DF27126F7500608C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jutsu WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JAFM26WWR8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jutsu WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jutsu WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinWin.apps.Jutsu.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		E1C176E227126F7500608C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JAFM26WWR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Jutsu_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jutsu WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.VinWin.apps.Jutsu;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinWin.apps.Jutsu.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		E1C176E327126F7500608C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JAFM26WWR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Jutsu_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jutsu WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.VinWin.apps.Jutsu;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinWin.apps.Jutsu.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		E1C176E627126F7500608C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jutsu/Preview Content\"";
+				DEVELOPMENT_TEAM = JAFM26WWR8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinWin.apps.Jutsu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1C176E727126F7500608C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jutsu/Preview Content\"";
+				DEVELOPMENT_TEAM = JAFM26WWR8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinWin.apps.Jutsu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1C176AC27126F7000608C6D /* Build configuration list for PBXProject "Jutsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C176DB27126F7500608C6D /* Debug */,
+				E1C176DC27126F7500608C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C176DD27126F7500608C6D /* Build configuration list for PBXNativeTarget "Jutsu WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C176DE27126F7500608C6D /* Debug */,
+				E1C176DF27126F7500608C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C176E127126F7500608C6D /* Build configuration list for PBXNativeTarget "Jutsu WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C176E227126F7500608C6D /* Debug */,
+				E1C176E327126F7500608C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C176E527126F7500608C6D /* Build configuration list for PBXNativeTarget "Jutsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C176E627126F7500608C6D /* Debug */,
+				E1C176E727126F7500608C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1C176A927126F7000608C6D /* Project object */;
+}
