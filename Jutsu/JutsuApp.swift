@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct JutsuApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

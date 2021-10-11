@@ -19,6 +19,19 @@
 		E1C176D427126F7400608C6D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176D327126F7400608C6D /* ComplicationController.swift */; };
 		E1C176D627126F7500608C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C176D527126F7500608C6D /* Assets.xcassets */; };
 		E1C176D927126F7500608C6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C176D827126F7500608C6D /* Preview Assets.xcassets */; };
+		E1C176E9271277A500608C6D /* ViewModelIPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176E8271277A500608C6D /* ViewModelIPhone.swift */; };
+		E1C176ED2712780D00608C6D /* ViewModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176EC2712780D00608C6D /* ViewModelWatch.swift */; };
+		E1C176F02712835200608C6D /* SessionDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176EF2712835200608C6D /* SessionDelegator.swift */; };
+		E1C176F12712835200608C6D /* SessionDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176EF2712835200608C6D /* SessionDelegator.swift */; };
+		E1C176F3271283CC00608C6D /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176F2271283CC00608C6D /* Counter.swift */; };
+		E1C176F4271283CC00608C6D /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176F2271283CC00608C6D /* Counter.swift */; };
+		E1C176F627128BC800608C6D /* AccelerometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176F527128BC800608C6D /* AccelerometerView.swift */; };
+		E1C176F82712971B00608C6D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C176F72712971B00608C6D /* LocationManager.swift */; };
+		E1C176FE27129D9900608C6D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C176FD27129D9900608C6D /* HealthKit.framework */; };
+		E1C177022712A69400608C6D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C177012712A69400608C6D /* ExtensionDelegate.swift */; };
+		E1C177042712B09700608C6D /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C177032712B09700608C6D /* WorkoutManager.swift */; };
+		E1C177062712D29D00608C6D /* AnimalSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C177052712D29D00608C6D /* AnimalSign.swift */; };
+		E1C177072712D29D00608C6D /* AnimalSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C177052712D29D00608C6D /* AnimalSign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +91,17 @@
 		E1C176D527126F7500608C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C176D827126F7500608C6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1C176DA27126F7500608C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C176E8271277A500608C6D /* ViewModelIPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelIPhone.swift; sourceTree = "<group>"; };
+		E1C176EC2712780D00608C6D /* ViewModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWatch.swift; sourceTree = "<group>"; };
+		E1C176EF2712835200608C6D /* SessionDelegator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegator.swift; sourceTree = "<group>"; };
+		E1C176F2271283CC00608C6D /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		E1C176F527128BC800608C6D /* AccelerometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerView.swift; sourceTree = "<group>"; };
+		E1C176F72712971B00608C6D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E1C176FB27129D9800608C6D /* Jutsu WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Jutsu WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		E1C176FD27129D9900608C6D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1C177012712A69400608C6D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E1C177032712B09700608C6D /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		E1C177052712D29D00608C6D /* AnimalSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C176FE27129D9900608C6D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +126,12 @@
 		E1C176A827126F7000608C6D = {
 			isa = PBXGroup;
 			children = (
+				E1C176EE2712833400608C6D /* Shared */,
 				E1C176B327126F7000608C6D /* Jutsu */,
 				E1C176C327126F7300608C6D /* Jutsu WatchKit App */,
 				E1C176CE27126F7400608C6D /* Jutsu WatchKit Extension */,
 				E1C176B227126F7000608C6D /* Products */,
+				E1C176FC27129D9900608C6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C176B427126F7000608C6D /* JutsuApp.swift */,
+				E1C176E8271277A500608C6D /* ViewModelIPhone.swift */,
 				E1C176B627126F7000608C6D /* ContentView.swift */,
 				E1C176B827126F7300608C6D /* Assets.xcassets */,
 				E1C176BA27126F7300608C6D /* Preview Content */,
@@ -148,12 +176,20 @@
 		E1C176CE27126F7400608C6D /* Jutsu WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E1C176FB27129D9800608C6D /* Jutsu WatchKit Extension.entitlements */,
+				E1C176F2271283CC00608C6D /* Counter.swift */,
+				E1C177052712D29D00608C6D /* AnimalSign.swift */,
+				E1C177012712A69400608C6D /* ExtensionDelegate.swift */,
+				E1C176F527128BC800608C6D /* AccelerometerView.swift */,
+				E1C176EC2712780D00608C6D /* ViewModelWatch.swift */,
 				E1C176CF27126F7400608C6D /* ContentView.swift */,
+				E1C177032712B09700608C6D /* WorkoutManager.swift */,
 				E1C176D127126F7400608C6D /* JutsuApp.swift */,
 				E1C176D327126F7400608C6D /* ComplicationController.swift */,
 				E1C176D527126F7500608C6D /* Assets.xcassets */,
 				E1C176DA27126F7500608C6D /* Info.plist */,
 				E1C176D727126F7500608C6D /* Preview Content */,
+				E1C176F72712971B00608C6D /* LocationManager.swift */,
 			);
 			path = "Jutsu WatchKit Extension";
 			sourceTree = "<group>";
@@ -164,6 +200,22 @@
 				E1C176D827126F7500608C6D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1C176EE2712833400608C6D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E1C176EF2712835200608C6D /* SessionDelegator.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E1C176FC27129D9900608C6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1C176FD27129D9900608C6D /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C177062712D29D00608C6D /* AnimalSign.swift in Sources */,
+				E1C176F3271283CC00608C6D /* Counter.swift in Sources */,
+				E1C176F02712835200608C6D /* SessionDelegator.swift in Sources */,
+				E1C176E9271277A500608C6D /* ViewModelIPhone.swift in Sources */,
 				E1C176B727126F7000608C6D /* ContentView.swift in Sources */,
 				E1C176B527126F7000608C6D /* JutsuApp.swift in Sources */,
 			);
@@ -306,9 +362,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C176F627128BC800608C6D /* AccelerometerView.swift in Sources */,
 				E1C176D027126F7400608C6D /* ContentView.swift in Sources */,
 				E1C176D227126F7400608C6D /* JutsuApp.swift in Sources */,
+				E1C177022712A69400608C6D /* ExtensionDelegate.swift in Sources */,
+				E1C176F4271283CC00608C6D /* Counter.swift in Sources */,
+				E1C176F82712971B00608C6D /* LocationManager.swift in Sources */,
+				E1C176F12712835200608C6D /* SessionDelegator.swift in Sources */,
+				E1C177042712B09700608C6D /* WorkoutManager.swift in Sources */,
+				E1C176ED2712780D00608C6D /* ViewModelWatch.swift in Sources */,
 				E1C176D427126F7400608C6D /* ComplicationController.swift in Sources */,
+				E1C177072712D29D00608C6D /* AnimalSign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Jutsu WatchKit Extension/Jutsu WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jutsu WatchKit Extension/Preview Content\"";
@@ -451,7 +516,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Jutsu WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Jutsu WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Jutsu_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Jutsu uses health data to determine signs.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Jutsu WatchKit Extension/Jutsu WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jutsu WatchKit Extension/Preview Content\"";
@@ -483,7 +550,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Jutsu WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Jutsu WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Jutsu_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Jutsu uses health data to determine signs.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (

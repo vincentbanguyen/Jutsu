@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct JutsuApp: App {
+    @StateObject private var workoutManager = WorkoutManager()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                //ContentView()
+                AccelerometerView().environmentObject(workoutManager)
             }
         }
     }

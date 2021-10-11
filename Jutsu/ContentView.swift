@@ -6,12 +6,94 @@
 //
 
 import SwiftUI
+import SwiftUI
+import WatchConnectivity
 
 struct ContentView: View {
+    @StateObject var animal = AnimalSign()
+    @State var reachable = "No"
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+        switch animal.animal {
+        case "serpent":
+            
+            VStack {
+            Text("🐍").font(Font.system(size: 100, weight: .semibold))
+                Image( "serpent")
+            }
+            
+        case "dragon":
+            
+            VStack {
+            Text("🐲").font(Font.system(size: 100, weight: .semibold))
+                Image( "dragon")
+                
+            }
+            
+        case "boar":
+            
+            VStack {
+            Text("🐷").font(Font.system(size: 100, weight: .semibold))
+                Image( "boar")
+                
+            }
+        case "sheep":
+            
+            VStack {
+            Text("🐏").font(Font.system(size: 100, weight: .semibold))
+            
+            
+            Image( "sheep")
+                
+            }
+        case "monkey":
+            
+            VStack {
+            Text("🐵").font(Font.system(size: 100, weight: .semibold))
+                Image( "monkey")
+            }
+        case "horse":
+            
+            VStack {
+            Text("🐴").font(Font.system(size: 100, weight: .semibold))
+                
+                Image("horse")
+            }
+        case "tiger":
+            
+            VStack {
+            Text("🐯").font(Font.system(size: 100, weight: .semibold))
+            
+            Image( "tiger")
+            
+        }
+            
+        default:
+            Text("JUTSU").font(Font.system(size: 100, weight: .semibold))
+            
+        }
+            
+            Text("Reachable \(reachable)")
+                       
+                       Button(action: {
+                           if self.animal.session.isReachable{
+                               self.reachable = "Yes"
+                           }
+                           else{
+                               self.reachable = "No"
+                           }
+                           
+                       }) {
+                           Text("Update")
+                       }
+            
+            
+        }
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
