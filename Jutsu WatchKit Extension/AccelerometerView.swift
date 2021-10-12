@@ -18,7 +18,7 @@ struct AccelerometerView: View {
     @State private var pitch = Double.zero
     @State private var yaw = Double.zero
     @State private var roll = Double.zero
-    
+    @State var animalWeaved = false
     @State private var accelerationX = Double.zero
     @State private var accelerationY = Double.zero
     @State private var accelerationZ = Double.zero
@@ -174,6 +174,8 @@ struct AccelerometerView: View {
                         
                         let closestOrientation = orientationArray.enumerated().min( by: { hypotf(Float($0.1.x - CGFloat(attitude.pitch)),Float($0.1.y - CGFloat(attitude.roll))) < hypotf(Float($1.1.x - CGFloat(attitude.pitch)),Float($1.1.y - CGFloat(attitude.roll))) } )!
                         
+                        
+                        if animalWeaved == false {
                         switch closestOrientation.offset {
                         case 0:
                             checkAnimalSign(animal: "serpent")
@@ -192,6 +194,7 @@ struct AccelerometerView: View {
                         default:
                             checkAnimalSign(animal: "serpent")
                             
+                        }
                         }
                         
 //                        if (abs(attitude.pitch - pitchSerpent) < tolerance) && (abs(attitude.roll - rollSerpent) < tolerance) {
@@ -256,18 +259,24 @@ struct AccelerometerView: View {
     }//view
     
     func checkAnimalSign(animal: String) {
+        
+        animalWeaved = true
             if jutsuArray.count > 0 {
                 if jutsuArray[jutsuArray.count - 1] != animal {
                     print("\(animal) sign Weaved.")
                     jutsuArray.append("\(animal)")
                     self.animal.changeAnimalSign(selectedAnimal: animal)
+                    WKInterfaceDevice.current().play(.start)
                 }
             }
             else {
                 jutsuArray.append("\(animal)")
                 self.animal.changeAnimalSign(selectedAnimal: animal)
+                WKInterfaceDevice.current().play(.start)
             }
-
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+        animalWeaved = false
+        }
     }
     
 }//struct
