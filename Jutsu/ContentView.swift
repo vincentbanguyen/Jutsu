@@ -6,17 +6,23 @@
 //
 
 import SwiftUI
-import SwiftUI
+
 import WatchConnectivity
 
 struct ContentView: View {
-    @StateObject var animal = AnimalSign()
+    @StateObject var session = AnimalSign()
     @State var reachable = "No"
     
     var body: some View {
-        
         VStack {
-        switch animal.animal {
+            Button(action: {
+                
+                session.calibrateOn()
+                
+            }) {
+                Text("Calibrate")
+            }
+        switch session.animal {
         case "serpent":
             
             VStack {
@@ -78,7 +84,7 @@ struct ContentView: View {
             Text("Reachable \(reachable)")
                        
                        Button(action: {
-                           if self.animal.session.isReachable{
+                           if self.session.session.isReachable {
                                self.reachable = "Yes"
                            }
                            else{

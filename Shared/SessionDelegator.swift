@@ -10,11 +10,23 @@ import WatchConnectivity
 
 class SessionDelegater: NSObject, WCSessionDelegate {
     let animalSubject: PassthroughSubject<String, Never>
+    let calibratingSubject: PassthroughSubject<Bool, Never>
     
-    init(animalSubject: PassthroughSubject<String, Never>) {
+    
+    let calibratePitchSubject: PassthroughSubject<Double, Never>
+    let calibrateRollSubject: PassthroughSubject<Double, Never>
+    
+    init(animalSubject: PassthroughSubject<String, Never>, calibratingSubject: PassthroughSubject<Bool, Never>, calibratePitchSubject: PassthroughSubject<Double, Never>, calibrateRollSubject: PassthroughSubject<Double, Never> ) {
         self.animalSubject = animalSubject
+        self.calibratingSubject = calibratingSubject
+        
+        self.calibrateRollSubject = calibrateRollSubject
+        self.calibratePitchSubject = calibratePitchSubject
+        
         super.init()
     }
+    
+
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         // Protocol comformance only
@@ -28,6 +40,13 @@ class SessionDelegater: NSObject, WCSessionDelegate {
             } else {
                 print("There was an error")
             }
+            
+            if let calibrate = message["calibrate"] as? Bool {
+                self.calibratingSubject.send(calibrate)
+            } else {
+                print("There was an error")
+            }
+            
         }
     }
     

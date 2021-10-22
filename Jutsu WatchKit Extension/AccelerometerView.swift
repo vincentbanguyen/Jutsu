@@ -145,9 +145,9 @@ struct AccelerometerView: View {
                     
                     
 //
-//                    print("pitch: \(attitude.pitch)")
+                  print("pitch: \(attitude.pitch)")
 //                    print("yaw: \(attitude.yaw)")
-//                    print("roll: \(attitude.roll)")
+                    print("roll: \(attitude.roll)")
 //                    print("accelerationX: \(userAcceleration.x)")
 //                    print("accelerationY: \(userAcceleration.y)")
 //                    print("accelerationZ: \(userAcceleration.z)")
